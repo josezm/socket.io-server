@@ -8,11 +8,16 @@ io.on('connection', client => {
       console.log("Cliente desconectado");
     });
 
-    client.on('mensaje', (payload)=>{
-       console.log(payload.nombre);
+   //  client.on('mensaje', (payload)=>{
+   //    //  console.log(payload.nombre);
+   //    //  console.log(payload.mensaje);
 
-       client.emit('mensaje', {admin:'Saludos terricolas'})
+   //     client.broadcast.emit('mensaje', payload)
 
-    })
+   //  });
+
+   //  client.on('nuevo-mensaje', (payload) =>{
+   //     io.emit('nuevo-mensaje', 'mensaje: ' + payload);
+   //  });
 
  });
