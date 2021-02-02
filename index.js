@@ -18,6 +18,8 @@ require('./sockets/sockets')
 //Middlewares
 //path inicial
 app.use('/api/login', require('./routes/auth'));
+app.use('/api/users', require('./routes/usuarios'));
+app.use('/api/mensajes', require('./routes/mensajes'));
 
 
 // path publico
